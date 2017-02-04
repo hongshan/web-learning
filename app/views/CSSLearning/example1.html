@@ -1,4 +1,4 @@
-<body ng-controller="loginController">
+<div ng-controller="loginController">
     <div class="simple">
         no padding
     </div>
@@ -6,4 +6,20 @@
     <div class="fancy">
         I have padding
     </div>
-</body>
+
+    <div class='style-el'>
+        <style type="text/css">
+            @import url(styles/CSSLearning/importcss.css) print;
+            .style-el div  {color: green;}
+            /*not work if put @import here*/
+            /*@import url(styles/CSSLearning/importcss.css) print;*/
+        </style>
+        <div>
+            I use style element
+        </div>
+        <h1>
+            I use import css
+        </h1>
+        
+    </div>
+</div>
