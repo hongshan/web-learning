@@ -9,17 +9,34 @@
 
     <div class='style-el'>
         <style type="text/css">
-            @import url(styles/CSSLearning/importcss.css) print;
+            @import url(styles/CSSLearning/importcss1.css) all;
             .style-el div  {color: green;}
             /*not work if put @import here*/
             /*@import url(styles/CSSLearning/importcss.css) print;*/
         </style>
         <div>
-            I use style element
+            I use style element, I'm green.
         </div>
         <h1>
-            I use import css
+            I use @import css, try to print.
         </h1>
-        
+        <span class="errorlable">
+            span.errorlable
+        </span>
+
+        <span>
+            <a class="errorlable1" >span      .errorlable1</a>
+        </span>
+
+        <div class="errorlable2 error-lg">
+            <span>.errorlable2  span</span>
+        </div>
+
+        <div class="errorlable2 error-lg">
+            error-lg is important so use color red
+            else without  !important  should be green
+            <span id="some-error">.errorlable2  span id=some-error</span>
+        </div>
+
     </div>
 </div>

@@ -3,3 +3,25 @@ h1 {
     border: solid;
     border-color: grey;
 }
+span {
+    margin: 20px;
+}
+span.errorlable {
+    background: red;
+    color: blue;
+    border: dotted;
+}
+
+span .errorlable1 {
+    background: green;
+    color: blue;
+    border: dotted;
+}
+
+.errorlable2 span {
+    background: grey;
+    color: blue;
+    border: dotted;
+    font-weight:bold;
+}
+
