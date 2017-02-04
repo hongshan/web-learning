@@ -1,0 +1,14 @@
+<div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default  btn-sm" ng-repeat="tag in tags" ng-mousedown='mouseDown()' ng-mouseup="mouseUp()"
+                ng-click="selectTag(tag)"> {{tag.name}} 
+                <input type="checkbox" ng-show="editMode">
+        </button>
+        <button ng-show="editMode" type="button" class="btn btn-danger  btn-sm">
+            <span class="glyphicon glyphicon-remove"> </span> remove
+        </button>
+        <button ng-hide="editMode" type="button" class="btn btn-default  btn-sm">
+            <span class="glyphicon glyphicon-plus"> </span> new
+        </button>
+    </div>
+</div>

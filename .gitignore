@@ -1,0 +1,4 @@
+app/bower_components
+bin
+*.log
+node_modules

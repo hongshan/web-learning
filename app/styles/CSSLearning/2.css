@@ -1,0 +1,23 @@
+#div-one {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.simple {
+  width: 500px;
+  margin: 20px auto;
+  border-color: red;
+  border-style: groove;
+  box-sizing: border-box;
+}
+
+.fancy {
+  width: 500px;
+  margin: 20px auto;
+  padding: 40px;
+  border-width: 10px;
+  border-color: green;
+  background-color: yellow;
+  border-style: groove hidden inset outset;
+  box-sizing: border-box;
+};

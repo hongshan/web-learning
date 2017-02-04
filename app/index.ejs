@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/md/editormd.min.css"/>
+    <link rel="stylesheet" href="bower_components/codemirror/codemirror.min.css" /> 
+    <link rel='stylesheet' type='text/css' href='styles/CSSLearning/1.css' title='style default'/>
+        <link rel='alternate stylesheet' type='text/css' href='styles/CSSLearning/2.css' title='style yellow'/>
+    <script src="bower_components/requirejs/require.js" data-main="scripts/main.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/">
+              <!-- <img alt="Brand" src="images/favicon.ico"> -->
+              Welcom to NGT
+            </a>
+          </div>
+          <div ng-controller="loginController">
+            <button ng-hide="hasLogin" type="button" class="btn btn-default navbar-btn navbar-right" ng-click="login()">Sign in</button>
+            <p ng-show="hasLogin" class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Hong Shan</a></p>
+          </div>
+        </div>
+      </nav>
+      <div class="container" ng-view></div>
+    </div>
+  <body>
+</html>
