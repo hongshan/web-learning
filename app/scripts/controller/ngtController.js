@@ -4,7 +4,7 @@ define(["app"], function(app){
         $scope.backHome = function(){
             $location.path("/");
         }
-        console.log("ssss",$location.path())
+        console.log("ssss",$location)
         var path = $location.path();
         var pathStrs = path.split("/");
         console.log(pathStrs)

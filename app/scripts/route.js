@@ -7,9 +7,11 @@ define([
     "contentListController",
     "editorController",
     "mdController",
-    "contentListController",
+    "cssLearningController",
     ], function(app) {
-        app.config(function ($routeProvider) {
+        app.config(function ($routeProvider, $locationProvider) {
+            console.log($locationProvider.html5Mode)
+            $locationProvider.html5Mode({enabled:true, requireBase:false, rewriteLinks:true})
             $routeProvider.when('/home', {
                         templateUrl : 'views/home.html',
                         controller  : 'ngtController',
@@ -17,18 +19,21 @@ define([
                 redirectTo: "/login"
             }).when("/", {
                 redirectTo: "/home"
-            }).when("/content/:id", {
+            }).when("/home/content/:id", {
                 templateUrl : 'views/content.html',
                 controller: "ngtController",
-            }).when("/editor", {
+            }).when("/home/editor", {
                 templateUrl: 'views/editor.html',
                 controller: 'editorController',
-            }).when("/md", {
+            }).when("/home/md", {
                 templateUrl: 'views/md/mdHome.html',
                 controller: 'mdController',
-            }).when("/cssLearning", {
-                templateUrl: 'views/CSSLearning/example1.html',
-                controller: 'contentListController',
+            }).when("/home/cssLearning", {
+                templateUrl: 'views/CSSLearning/examplehome.html',
+                controller: 'cssLearningController',
+            }).when("/home/cssexample/:name", {
+                templateUrl: function(params){console.log('hello');return 'views/CSSLearning/' + params.name + '.html'},
+                controller: 'cssLearningController',
             })
         })
         app.config(function($stateProvider){
@@ -48,10 +53,10 @@ define([
                 }
             })
             $stateProvider.state("md",{
-                url: "/md"
+                url: "/home/md"
             });
             $stateProvider.state("content", {
-                url: "content/:id",
+                url: "/home/content/:id",
                 params: {id:"@id", details:{}},
                 views: {
                     "content.tag": {
@@ -64,7 +69,10 @@ define([
                     }
                 }
             }).state('CSSLearning',{
-                url: '/cssLearning'
+                url: '/home/cssLearning'
+            }).state('cssexample',{
+                params: {name: "@name"},
+                url: '/home/cssexample/:name',
             })
         })
 
