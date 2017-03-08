@@ -1,0 +1,14 @@
+@import url(importcss.css) all;
+.error-lg
+{
+    font-size: 24px;
+    color: red !important;
+    /*not work*/
+}
+
+#some-error
+{
+    font-size: 24px;
+    color: black !important;
+    /*not work*/
+}

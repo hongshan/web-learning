@@ -2,3 +2,7 @@ app/bower_components
 bin
 *.log
 node_modules
+flask/.tox
+flask/*.egg-info
+DS_Store
+*.pyc

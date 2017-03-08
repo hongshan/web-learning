@@ -1,0 +1,10 @@
+{
+  "name": "ngt",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2.12-build.2226",
+    "angular-route": "~1.2.12-build.2226",
+    "angular-bootstrap": "^1.1.2",
+  },
+  "devDependencies": {}
+}
