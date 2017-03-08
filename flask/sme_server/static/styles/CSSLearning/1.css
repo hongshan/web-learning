@@ -20,4 +20,11 @@
   background-color: red;
   border-style: groove hidden inset outset;
   box-sizing: border-box;
-};
+}
+
+.btn-list {
+  margin:20px 5%;
+  box-sizing: border-box;
+  width: 40%;
+  min-width: 200px;
+}

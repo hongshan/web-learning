@@ -15,6 +15,7 @@ require.config({
         "contentListController": "../scripts/controller/contentListController",
         "editorController": "../scripts/controller/editorController",
         "mdController": "../scripts/controller/mdController",
+        "cssLearningController": "../scripts/controller/cssLearningController",
         "dataService": "../scripts/service/dataService",
         "user": "../scripts/resource/user",
         "content": "../scripts/resource/content",
