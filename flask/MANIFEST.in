@@ -1,0 +1,2 @@
+recursive-include sme_server/templates *
+recursive-include sme_server/static *

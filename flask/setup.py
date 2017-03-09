@@ -9,8 +9,7 @@ setup(
             'sme=sme_server:run',
         ],
     },
-    package_data={
-    '': ['templates/*'],
-},
+    include_package_data=True
+
 )
 
