@@ -79,4 +79,4 @@ def run():
     app.register_blueprint(api_1_0_blueprint, url_prefix='/api/v1.0')
     app.run(debug=True)
 if __name__ == '__main__':
-    app.run(debug=True)
+    run()

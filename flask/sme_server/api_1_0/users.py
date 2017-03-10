@@ -5,6 +5,8 @@ from ..models import User
 
 @api.route('/users/<int:id>')
 def get_user(id):
-    user = User.query.get_or_404(id)
-    return jsonify(user.to_json())
-
+    if id == "hello":
+        return "I'm a fake user"
+@api.route('/users/test')
+def test():
+    return "I'm a fake user test"
